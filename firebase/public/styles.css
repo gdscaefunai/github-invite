@@ -33,12 +33,46 @@ main {
   box-shadow: 0 0 10px 3px #3f51b5;
 }
 
+img.logo {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 h1 {
   margin: 0;
   font-weight: 700;
   text-decoration: underline;
   text-decoration-style: double;
+  text-decoration-color: rgba(0, 0, 0, 0.55);
   font-size: 2rem;
+}
+
+h1 span.heading-blue {
+  color: #4285f4;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: #4285f4;
+}
+
+h1 span.heading-red {
+  color: #ea4335;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: #ea4335;
+}
+
+h1 span.heading-yellow {
+  color: #fbbc04;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: #fbbc04;
+}
+
+h1 span.heading-green {
+  color: #34a853;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: #34a853;
 }
 
 .org-name {
@@ -144,11 +178,29 @@ button[type='submit']:disabled {
   color: rgb(142, 40, 40);
 }
 
+@media (max-width: 991.98px) {
+  img.logo[src*="vertical"] {
+    display: inline-block;
+  }
+
+  img.logo[src*="horizontal"] {
+    display: none;
+  }
+}
+
 @media (min-width: 992px) {
   main {
     max-width: 900px;
     border-radius: 25px;
     font-size: 1.4rem;
+  }
+
+  img.logo[src*="vertical"] {
+    display: none;
+  }
+
+  img.logo[src*="horizontal"] {
+    display: inline-block;
   }
 
   h1 {
