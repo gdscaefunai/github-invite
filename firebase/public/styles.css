@@ -4,13 +4,25 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Google Sans';
+  src: url(/fonts/GoogleSans-Regular-v1.27.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url(/fonts/GoogleSans-Bold-v1.27.ttf);
+  font-weight: bold;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
   background-color: #f9fcff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Google Sans', 'Roboto', sans-serif;
   font-size: 1.2rem;
 }
 
@@ -114,6 +126,7 @@ input[type='text'] {
 }
 
 ::placeholder {
+  font-family: 'Google Sans', 'Roboto', sans-serif;
   color: rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
@@ -139,7 +152,7 @@ button[type='submit'] {
   color: white;
   background-color: #0000ff;
   box-shadow: 0.5px 0.5px 3px 1px #3f51b5;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Google Sans', 'Roboto', sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   margin: 20px;
